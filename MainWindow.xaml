@@ -1,0 +1,61 @@
+﻿<Window x:Class="Prakt7WPFSav.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt7WPFSav"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel 
+            Grid.Column="0"
+            Orientation="Vertical">
+            
+            <Label Content="Последнние документы"/>
+            <Label Content="1.txt"/>
+            <Label Content="2.txt"/>
+            <Label Content="3.txt"/>
+            <Label Content="4.txt"/>
+            <Label Content="5.txt"/>
+            <Label Content="6.txt"/>
+            
+        </StackPanel>
+
+        <StackPanel 
+            Grid.Column="1"
+            Orientation="Vertical">
+
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="8" Content="Открыть"/>
+                <Button Margin="8" Content="Сохранить"/>
+                <Button Margin="8" Content="Закрыть"/>
+                <Button Margin="8" Content="Обработать"/>
+                <Button Margin="8" Content="О программе"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="1.txt"/>
+                <Label Content="2.txt"/>
+                <Label Content="3.txt"/>
+            </StackPanel>
+
+            <WrapPanel>
+                <Button Margin="8" Width="50" Height="60" Background="Yellow" Content="A"/>
+                <Button Margin="8" Width="50" Height="60" Background="Red" Content="B"/>
+                <Button Margin="8" Width="50" Height="60" Background="Green" Content="C"/>
+                <Button Margin="8" Width="50" Height="60" Background="Blue" Content="D"/>
+                <Button Margin="8" Width="50" Background="Gray" Content="E"/>
+                <Button Margin="8" Width="50" Background="LightYellow" Content="F"/>
+            </WrapPanel>
+
+        </StackPanel>
+
+    </Grid>
+    
+</Window>
